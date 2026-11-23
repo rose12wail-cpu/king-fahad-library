@@ -7,8 +7,7 @@ import os
 
 application = Flask(__name__)
 application.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
-application.config['SECRET_KEY'] = 'kfnl-secret-key-2024'
-
+application.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-key-change-me')
 db.init_app(application)
 
 with application.app_context():
