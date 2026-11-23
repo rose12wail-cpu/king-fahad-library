@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - King Fahd National Library</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+     <script src="{{ url_for('static', filename='script.js') }}" ></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <div class="logo-left">
+            <img src="{{ url_for('static', filename='slogan.jpg') }}" alt="LibraryLogo" class="logo-img">
+            </div>
+         <div class="title-center">
+    <h1>King Fahd National Library Services</h1>
+   </div>
+       <div class="empty-right"></div>
+       </div>
+
+   <nav>
+        <b>
+            <a href="{{ url_for('home') }}">Home page </a>|
+            <a href="{{ url_for('about') }}">About the library </a>|
+            <a href="{{ url_for('services') }}">Services</a>|
+            <a href="{{ url_for('sections') }}">Sections</a>|
+            <a href="{{ url_for('contactus') }}">Contact us </a>|
+            
+        </b>
+    </nav>
+    <hr>
+   </header>
+
+<main>
+
+<h2>Explore Our Services</h2>
+<div class="services-grid">
+  <div class="srv-card" onclick="this.classList.toggle('flipped')">
+    <div class="srv-front">📚 Loan Service</div>
+    <div class="srv-back">The King Fahd National Library provides a loan service that allows users
+ to borrow books according to specific regulations, enabling readers and
+ researchers to benefit from library resources outside the library for a
+ limited period.
+</div>
+  </div>
+  <div class="srv-card" onclick="this.classList.toggle('flipped')">
+    <div class="srv-front">🖥️ Digital Services</div>
+    <div class="srv-back">The library provides advanced digital services, including access to electronic
+ resources, online catalogs, and digital databases that support scientific
+ research and knowledge access.</div>
+  </div>
+  <div class="srv-card" onclick="this.classList.toggle('flipped')">
+    <div class="srv-front">🔬 Research Support</div>
+    <div class="srv-back">Special services are provided for researchers, such as assistance in locating
+ references, access to theses and manuscripts, and specialized information
+support.</div>
+  </div>
+  <div class="srv-card" onclick="this.classList.toggle('flipped')">
+    <div class="srv-front">📖 Reading Halls</div>
+    <div class="srv-back">The library offers well-equipped reading halls designed for reading and study.
+ These halls provide a quiet and comfortable environment suitable for students
+ and researchers.
+</div>
+  </div>
+  <div class="srv-card" onclick="this.classList.toggle('flipped')">
+    <div class="srv-front">📜 Legal Deposit</div>
+    <div class="srv-back">This service requires publishers and authors to deposit copies of their intellectual
+ production at the King Fahd National Library, aiming to preserve and document the
+ national intellectual output.
+</div>
+  </div>
+  <div class="srv-card" onclick="this.classList.toggle('flipped')">
+    <div class="srv-front">🎭 Cultural Events</div>
+    <div class="srv-back">Exhibitions and cultural programs supporting the scientific movement.</div>
+  </div>
+</div>
+ 
+</main>
+ 
+       <footer>
+  <p><small>&copy; 2026 King Fahad National Library</small></p>
+</footer>
+    
+
+</body>
+</html>
